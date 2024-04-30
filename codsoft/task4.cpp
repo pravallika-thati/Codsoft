@@ -61,7 +61,7 @@ int main() {
         switch (choice) {
             case 1:
                 cout << "Enter task description: ";
-                cin.ignore(); // Ignore newline character from previous input
+                cin.ignore(); 
                 getline(cin, taskDescription);
                 addTask(tasks, taskDescription);
                 break;
@@ -72,13 +72,13 @@ int main() {
                 viewTasks(tasks);
                 cout << "Enter task index to mark as completed: ";
                 cin >> index;
-                markCompleted(tasks, index - 1); // Adjust index to match vector indexing
+                markCompleted(tasks, index - 1); 
                 break;
             case 4:
                 viewTasks(tasks);
                 cout << "Enter task index to remove: ";
                 cin >> index;
-                removeTask(tasks, index - 1); // Adjust index to match vector indexing
+                removeTask(tasks, index - 1); 
                 break;
             case 5:
                 cout << "Exiting program.\n";
